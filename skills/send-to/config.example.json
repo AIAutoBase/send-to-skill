@@ -1,0 +1,22 @@
+{
+  "default": ["telegram"],
+  "targets": {
+    "telegram": { "type": "telegram", "token": "$TELEGRAM_BOT_TOKEN", "chat_id": "$TELEGRAM_CHAT_ID" },
+
+    "whatsapp": { "type": "whatsapp", "provider": "evolution", "url": "http://127.0.0.1:8080", "instance": "me", "api_key": "$EVOLUTION_API_KEY", "to": "17875551234" },
+
+    "whatsapp-twilio": { "type": "whatsapp", "provider": "twilio", "account_sid": "$TWILIO_ACCOUNT_SID", "auth_token": "$TWILIO_AUTH_TOKEN", "from": "whatsapp:+14155238886", "to": "whatsapp:+17875551234" },
+
+    "buzz": { "type": "buzz", "channel": "00000000-0000-0000-0000-000000000000", "relay": "https://buzz.example.com", "private_key": "$BUZZ_PRIVATE_KEY", "bin": "buzz" },
+
+    "buzz-remote": { "type": "buzz", "channel": "00000000-0000-0000-0000-000000000000", "ssh": "user@server", "env_file": "~/.config/send-to/buzz.env", "bin": "/home/user/bin/buzz" },
+
+    "imessage": { "type": "imessage", "to": "+17875551234" },
+
+    "n8n": { "type": "webhook", "url": "https://n8n.example.com/webhook/send-to", "headers": { "x-send-to-secret": "$N8N_WEBHOOK_SECRET" } },
+
+    "slack": { "type": "slack", "url": "$SLACK_WEBHOOK_URL" },
+
+    "discord": { "type": "discord", "url": "$DISCORD_WEBHOOK_URL" }
+  }
+}
