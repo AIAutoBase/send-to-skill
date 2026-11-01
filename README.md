@@ -1,5 +1,7 @@
 # send-to
 
+![send-to: say "send it to telegram" and a card with what was done lands in your chat](assets/send-to-banner.png)
+
 Repos: [AIAutoBase/send-to-skill](https://github.com/AIAutoBase/send-to-skill) · [roughboy99/send-to-skill](https://github.com/roughboy99/send-to-skill)
 
 A Claude Code skill. When a piece of work is done you say **"send it to telegram"**,
@@ -59,6 +61,13 @@ Discord, n8n, Make and Zapier belong to their owners.
 ## 📋 Latest Changes
 
 <!-- LATEST:BEGIN -->
+## [0.3.0] - 2026-11-01
+
+### Added
+- add robot courier hero illustration and 1280x640 README banner
+
+
+
 ## [0.2.0] - 2026-11-01
 
 ### Added
@@ -73,5 +82,6 @@ Discord, n8n, Make and Zapier belong to their owners.
 <!-- LATEST:END -->
 
 See full [CHANGELOG.md](CHANGELOG.md) for complete history.
+
 
 
